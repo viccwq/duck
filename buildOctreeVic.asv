@@ -1,0 +1,11 @@
+function [ a,b ] = buildOctreeVic( range,point )
+%BUILDOCTREEVIC Summary of this function goes here
+%   Detailed explanation goes here
+% input:    range 1*6 [xmin xmax ymin ymax zmin zmax]
+% input:    point 4*n :输入的固定点 第四列为指定的深度值
+% output:   a   8*n 点所在叶子的信息[xmin，xmax，]
+% output:   b   8*size（point，1）所有叶子的信息：
+% output:
+% output:
+end
+

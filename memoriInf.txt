@@ -1,0 +1,37 @@
+修改之前memory信息
+memory
+Maximum possible array:             616 MB (6.458e+008 bytes) *
+Memory available for all arrays:   1290 MB (1.353e+009 bytes) **
+Memory used by MATLAB:              495 MB (5.186e+008 bytes)
+Physical Memory (RAM):             2986 MB (3.131e+009 bytes)
+
+*  Limited by contiguous virtual address space available.
+** Limited by virtual address space available.
+
+system_dependent memstats
+
+    Physical Memory (RAM):
+        In Use:                             1231 MB (4cf6c000)
+        Free:                               1754 MB (6dad5000)
+        Total:                              2986 MB (baa41000)
+    Page File (Swap space):
+        In Use:                             1343 MB (53fa3000)
+        Free:                               5575 MB (15c704000)
+        Total:                              6918 MB (1b06a7000)
+    Virtual Memory (Address Space):
+        In Use:                              758 MB (2f65f000)
+        Free:                               1289 MB (50981000)
+        Total:                              2047 MB (7ffe0000)
+    Largest Contiguous Free Blocks:
+         1. [at 345e0000]                    615 MB (267e0000)
+         2. [at 226e6000]                    128 MB ( 800a000)
+         3. [at 62c29000]                     83 MB ( 53d7000)
+         4. [at 5fe25000]                     45 MB ( 2dfb000)
+         5. [at 6d346000]                     43 MB ( 2b5a000)
+         6. [at 5adf7000]                     35 MB ( 2379000)
+         7. [at 69ba6000]                     33 MB ( 216a000)
+         8. [at 5d36a000]                     27 MB ( 1ba6000)
+         9. [at 6fff6000]                     25 MB ( 19ca000)
+        10. [at 71a37000]                     21 MB ( 1539000)
+                                            ======= ==========
+                                            1060 MB (424a2000)

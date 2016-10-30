@@ -1,0 +1,30 @@
+clc;
+close all;
+%%
+%cow
+% load cow_node;
+% load cow_element;
+% node=cow_node;
+% element=cow_element;
+% clear cow_node cow_element;
+%%
+%sphere
+% load sphere_node;
+% load sphere_element;
+% node=sphere_node;
+% element=sphere_element;
+% clear sphere_node sphere_element;
+%%
+% dol1
+% load dol1_node;
+% load dol1_element;
+% node=dol1_node;
+% element=dol1_element;
+% clear dol1_node dol1_element;
+%%
+%rat
+load ratDataOK;
+element=face;
+%%
+% recoverVol( node,element);
+mesh3dRat(node,element);

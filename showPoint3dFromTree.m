@@ -1,0 +1,56 @@
+%function MyTest(x,y)
+function showPoint3dFromTree(p,d)
+%
+%
+%%
+
+
+%%
+
+d=d((p(:,1)>-0.2)&(p(:,1)<2),:);
+p=p((p(:,1)>-0.2)&(p(:,1)<2),:);
+po=p;
+% h=figure(2);
+% set(h,'rend','opengl');
+% hold on;
+% axis equal;
+% grid on;
+
+h=figure;
+set(h,'Renderer','OpenGL');
+hold on;
+
+p=po(d(:,1)==7,:);
+plot3(p(:,1),p(:,2),p(:,3),'.r','MarkerSize',10); 
+p=po(d(:,1)==6,:);
+plot3(p(:,1),p(:,2),p(:,3),'.g','MarkerSize',10); 
+p=po(d(:,1)==5,:);
+plot3(p(:,1),p(:,2),p(:,3),'.b','MarkerSize',10); 
+p=po(d(:,1)==4,:);
+plot3(p(:,1),p(:,2),p(:,3),'.k','MarkerSize',10); 
+p=po(d(:,1)==3,:);
+plot3(p(:,1),p(:,2),p(:,3),'.m','MarkerSize',10); 
+p=po(d(:,1)==2,:);
+plot3(p(:,1),p(:,2),p(:,3),'.r','MarkerSize',10); 
+p=po(d(:,1)==1,:);
+plot3(p(:,1),p(:,2),p(:,3),'.c','MarkerSize',10); 
+p=po(d(:,1)==0,:);
+plot3(p(:,1),p(:,2),p(:,3),'.y','MarkerSize',20); 
+
+
+
+
+% plot3(p(:,1),p(:,2),p(:,3),'.r','MarkerSize',20); 
+% tetramesh(t(num,:),p,'edgecolor','k','FaceAlpha',0.8,'FaceColor','g')
+xlabel ( '<--- X --->' );
+ylabel ( '<--- Y --->' );
+zlabel ( '<--- Z --->' );
+title ( 'point_filename' );
+
+view(3)
+axis equal vis3d off;
+rotate3d on
+cameramenu;
+
+return
+end

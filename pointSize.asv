@@ -1,0 +1,12 @@
+function [ val ] = pointSize( scale,depth,point )
+%POINTPROP Summary of this function goes here
+%根据scale所生成的笛卡尔网格，矩阵大小为m1*m1*m1，计算point中各点在笛卡尔网格中的
+%具体深度值
+%function [ val ] = pointSize( scale,point )
+%input:     scale m1*1  [-box,x*box,box]
+%input:     depth m1*m1*m1 笛卡尔网格各点的深度值
+%input:     point m2*3 空间点的坐标 
+%output:    val m2*1
+end
+
+差不多也半个多月了，不知道你有没有在镜子里见到那只吃货小猪啊？她的嘴巴应该消肿恢复了吧，想必食堂久违的饭菜已经将她上的“火”已经灭得彻彻底底

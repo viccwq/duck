@@ -1,0 +1,20 @@
+function [ node_new,range ] = sizeFun3d(node)
+%%
+%SIZEFUN Summary of this function goes here
+%所用节点调整到原点对称
+%[ node_new,range ] = sizeFun3d(node,Amplify)
+%输入：node        输入节点 n*3
+%输出：node_new    调整后的节点坐标 n*3
+%输出：range       调整后node在X Y Z方向上的最大值 1*3
+
+
+%%
+%获取点的范围,将图形的重心平移到原点
+range=(minmax(node'))';
+node_new=node-repmat((range(1,:)+range(2,:))/2,size(node,1),1);
+range=range-repmat((range(1,:)+range(2,:))/2,2,1);
+range(1,:)=[];
+
+return
+end
+
